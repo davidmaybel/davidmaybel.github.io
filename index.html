@@ -1,70 +1,58 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demi Adepoju | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi, I’m Demi — a Physics student with a computational emphasis, passionate about building tech-driven solutions, space technology, and product innovation. I have experience in backend development, VR testing, IT support, and product thinking. Welcome to my portfolio!</p>
+        </section>
 
-header h1 {
-    margin: 0;
-}
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>Geiger Counter Data Modeling</h3>
+                <p>Analyzed and modeled radiation data using a Geiger counter, applying statistical methods to interpret results. <a href="/MATLAB Drive/geigerCounter.m" target="_blank">View Project</a></p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Backend API for HR SaaS</h3>
+                <p>Built secure, scalable APIs and cost tracking systems using AWS and JavaScript for SeamlessHR. <a href="https://github.com/davidmaybel/Cloud_services/tree/main/Desktop/cloud_services" target="_blank">View Project</a></p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Personal AI Assistant</h3>
+                <p>A local Python-based voice assistant that executes commands, uses speech recognition, and interfaces with OpenAI API. <a href="https://github.com/davidmaybel/PersonalAI" target="_blank">View Project</a></p>
+            </div>
+        </section>
 
-nav {
-    background: #444;
-    color: #fff;
-    padding: 0.5rem;
-}
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>📧 <a href="mailto:Demidoyin@outlook.com">Demidoyin@outlook.com</a></p>
+            <p>📱 518-596-3387</p>
+            <p>🌐 <a href="https://www.linkedin.com/in/demilade-adepoju-a4a351233" target="_blank">LinkedIn</a> | <a href="https://github.com/your-username" target="_blank">GitHub</a></p>
+        </section>
+    </main>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+    <footer>
+        <p>&copy; 2024 Demi Adepoju. Built with HTML & JavaScript</p>
+    </footer>
 
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.container {
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section {
-    margin-bottom: 2rem;
-}
-
-.section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-}
-
-footer {
-    background: #333;
-    color: #2b2c4e;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    <script src="script.js"></script>
+</body>
+</html>
