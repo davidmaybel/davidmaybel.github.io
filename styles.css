@@ -1,4 +1,7 @@
-/* Reset some default browser styles */
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,65 +9,138 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #e2e8f0);
     color: #333;
     line-height: 1.6;
 }
 
+/* Header with gradient and shadow */
 header {
-    background: #333;
+    background: linear-gradient(to right, #4f46e5, #6366f1);
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 1rem;
     text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
+/* Navigation */
 nav {
-    background: #444;
-    color: #fff;
-    padding: 0.5rem;
+    background: #3b3b3b;
+    padding: 0.75rem;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #90cdf4;
+}
+
+/* Container */
 .container {
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
+/* Section titles */
 .section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .section h2 {
-    border-bottom: 2px solid #333;
+    font-size: 1.75rem;
+    border-bottom: 3px solid #6366f1;
     padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
+/* Portfolio cards */
+.portfolio-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-item h3 {
+    margin-bottom: 0.5rem;
+    color: #4f46e5;
+}
+
+.portfolio-item a {
+    color: #6366f1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact links */
+#contact a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer with clean contrast */
 footer {
-    background: #333;
-    color: #2b2c4e;
+    background: #2d2d2d;
+    color: #f0f0f0;
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 1.25rem 0;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
 }
